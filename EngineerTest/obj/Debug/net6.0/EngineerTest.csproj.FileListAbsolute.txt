@@ -1,0 +1,15 @@
+C:\Users\danie\Desktop\The Job Process\Tests\MYP\MYP-Test\EngineerTest\bin\Debug\net6.0\EngineerTest.exe
+C:\Users\danie\Desktop\The Job Process\Tests\MYP\MYP-Test\EngineerTest\bin\Debug\net6.0\EngineerTest.deps.json
+C:\Users\danie\Desktop\The Job Process\Tests\MYP\MYP-Test\EngineerTest\bin\Debug\net6.0\EngineerTest.runtimeconfig.json
+C:\Users\danie\Desktop\The Job Process\Tests\MYP\MYP-Test\EngineerTest\bin\Debug\net6.0\EngineerTest.dll
+C:\Users\danie\Desktop\The Job Process\Tests\MYP\MYP-Test\EngineerTest\bin\Debug\net6.0\EngineerTest.pdb
+C:\Users\danie\Desktop\The Job Process\Tests\MYP\MYP-Test\EngineerTest\obj\Debug\net6.0\EngineerTest.csproj.AssemblyReference.cache
+C:\Users\danie\Desktop\The Job Process\Tests\MYP\MYP-Test\EngineerTest\obj\Debug\net6.0\EngineerTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danie\Desktop\The Job Process\Tests\MYP\MYP-Test\EngineerTest\obj\Debug\net6.0\EngineerTest.AssemblyInfoInputs.cache
+C:\Users\danie\Desktop\The Job Process\Tests\MYP\MYP-Test\EngineerTest\obj\Debug\net6.0\EngineerTest.AssemblyInfo.cs
+C:\Users\danie\Desktop\The Job Process\Tests\MYP\MYP-Test\EngineerTest\obj\Debug\net6.0\EngineerTest.csproj.CoreCompileInputs.cache
+C:\Users\danie\Desktop\The Job Process\Tests\MYP\MYP-Test\EngineerTest\obj\Debug\net6.0\EngineerTest.dll
+C:\Users\danie\Desktop\The Job Process\Tests\MYP\MYP-Test\EngineerTest\obj\Debug\net6.0\refint\EngineerTest.dll
+C:\Users\danie\Desktop\The Job Process\Tests\MYP\MYP-Test\EngineerTest\obj\Debug\net6.0\EngineerTest.pdb
+C:\Users\danie\Desktop\The Job Process\Tests\MYP\MYP-Test\EngineerTest\obj\Debug\net6.0\EngineerTest.genruntimeconfig.cache
+C:\Users\danie\Desktop\The Job Process\Tests\MYP\MYP-Test\EngineerTest\obj\Debug\net6.0\ref\EngineerTest.dll

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "8x0XTrb7nhqykF3QcKt+l/0DKAud/8GFT9WtOaUgmwohcNXTh9bwWOEMQZdx/KEiHgoKjMJdc7vL2nip3PJmzQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\danie\\Desktop\\The Job Process\\Tests\\MYP\\MYP-Test\\EngineerTest\\EngineerTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.13\\microsoft.netcore.app.ref.6.0.13.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.13\\microsoft.windowsdesktop.app.ref.6.0.13.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.13\\microsoft.aspnetcore.app.ref.6.0.13.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.13\\microsoft.netcore.app.host.win-x64.6.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

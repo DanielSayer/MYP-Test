@@ -11,79 +11,62 @@ public class Pharmacy : IPharmacy
 
     public IEnumerable<IDrug> UpdateBenefitValue()
     {
+        int dailyBenefit = 1;
+
         for (var i = 0; i < _drugs.Length; i++)
         {
-            if (
-                _drugs[i].Name != "Herbal Tea" &&
-                _drugs[i].Name != "Fervex"
-            )
-            {
-                if (_drugs[i].Benefit > 0)
-                {
-                    if (_drugs[i].Name != "Magic Pill")
-                    {
-                        _drugs[i].Benefit = _drugs[i].Benefit - 1;
-                    }
-                }
-            }
-            else
-            {
-                if (_drugs[i].Benefit < 50)
-                {
-                    _drugs[i].Benefit = _drugs[i].Benefit + 1;
-                    if (_drugs[i].Name == "Fervex")
-                    {
-                        if (_drugs[i].ExpiresIn < 11)
-                        {
-                            if (_drugs[i].Benefit < 50)
-                            {
-                                _drugs[i].Benefit = _drugs[i].Benefit + 1;
-                            }
-                        }
-
-                        if (_drugs[i].ExpiresIn < 6)
-                        {
-                            if (_drugs[i].Benefit < 50)
-                            {
-                                _drugs[i].Benefit = _drugs[i].Benefit + 1;
-                            }
-                        }
-                    }
-                }
-            }
-
+            //Decreases expiration date
             if (_drugs[i].Name != "Magic Pill")
             {
                 _drugs[i].ExpiresIn = _drugs[i].ExpiresIn - 1;
             }
-
-            if (_drugs[i].ExpiresIn < 0)
+            switch (_drugs[i].Name)
             {
-                if (_drugs[i].Name != "Herbal Tea")
-                {
-                    if (_drugs[i].Name != "Fervex")
+                case "Herbal Tea":
+                    //Increase by benefit
+                    _drugs[i].Benefit += dailyBenefit;
+                    //Double if expired
+                    if (_drugs[i].ExpiresIn < 0) 
                     {
-                        if (_drugs[i].Benefit > 0)
-                        {
-                            if (_drugs[i].Name != "Magic Pill")
-                            {
-                                _drugs[i].Benefit = _drugs[i].Benefit - 1;
-                            }
-                        }
+                        _drugs[i].Benefit += dailyBenefit;
                     }
-                    else
+                    break;
+                case "Fervex":
+                    //Increase by benefit
+                    _drugs[i].Benefit += dailyBenefit;
+                    //Double if 10 or less days
+                    if (_drugs[i].ExpiresIn < 10) 
                     {
-                        _drugs[i].Benefit =
-                            _drugs[i].Benefit - _drugs[i].Benefit;
+                        _drugs[i].Benefit += dailyBenefit;
                     }
-                }
-                else
-                {
-                    if (_drugs[i].Benefit < 50)
+                    if (_drugs[i].ExpiresIn < 5) 
                     {
-                        _drugs[i].Benefit = _drugs[i].Benefit + 1;
+                        _drugs[i].Benefit += dailyBenefit;
                     }
-                }
+                    if (_drugs[i].ExpiresIn < 0) 
+                    {
+                        _drugs[i].Benefit = 0;
+                    }
+                    break;
+                //Never expires or changes benefit do nothing
+                case "Magic Pill":
+                    break;
+                default:
+                    //Decrease by benefit
+                    _drugs[i].Benefit -= dailyBenefit;
+                    //Repeat if expired
+                    if (_drugs[i].ExpiresIn < 0) 
+                    {
+                        _drugs[i].Benefit -= dailyBenefit;
+                    }
+                    break;
+            }
+            //Checking bounds post change
+            if (_drugs[i].Benefit > 50) {
+                _drugs[i].Benefit = 50;
+            }
+            if (_drugs[i].Benefit < 0) {
+                _drugs[i].Benefit = 0;
             }
         }
 
