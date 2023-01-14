@@ -52,12 +52,17 @@ public class Pharmacy : IPharmacy
                 case "Magic Pill":
                     break;
                 default:
+                    int scale = 1;
+                    if (_drugs[i].Name == "Dafalgan") {
+                        //Twice as fast
+                        scale = 2;
+                    } 
                     //Decrease by benefit
-                    _drugs[i].Benefit -= dailyBenefit;
+                    _drugs[i].Benefit -= scale * dailyBenefit;
                     //Repeat if expired
                     if (_drugs[i].ExpiresIn < 0) 
                     {
-                        _drugs[i].Benefit -= dailyBenefit;
+                        _drugs[i].Benefit -= scale * dailyBenefit;
                     }
                     break;
             }
