@@ -34,14 +34,10 @@ public class Pharmacy : IPharmacy
                 case "Fervex":
                     //Increase by benefit
                     _drugs[i].Benefit += dailyBenefit;
-                    //Double if 10 or less days
+                    //No need to use floor function as all numbers are integers. Will map 9-5 days to 1 and 4-0 days to 2 (times as fast, extra)
                     if (_drugs[i].ExpiresIn < 10) 
                     {
-                        _drugs[i].Benefit += dailyBenefit;
-                    }
-                    if (_drugs[i].ExpiresIn < 5) 
-                    {
-                        _drugs[i].Benefit += dailyBenefit;
+                        _drugs[i].Benefit += (2 - _drugs[i].ExpiresIn/5) * dailyBenefit;
                     }
                     if (_drugs[i].ExpiresIn < 0) 
                     {
